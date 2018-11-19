@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
+  <!--Importing the fonts that will be used for the header, links and main content -->
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Barlow|Oxygen|Lato|Sarala');
+  </style>
   <head>
     <meta charset="utf-8">
+      <link rel="stylesheet" href="cvHomePage.css"
+    type="text/css">
     <title>Paul Crockford's CV</title>
   </head>
   <body>
+
     <header>
       <h1>Paul Crockford</h1>
-      <h2>Student at the University of Dundee</h2>
       <!-- Links to other parts of the website / IN PROGRESS-->
       <ul>
         <li><a href="U:\Website-CV\HomePage\cvHomePage.html">Home</a></li>
@@ -17,13 +24,30 @@
       </ul>
     </header>
 
+    <!--Image displayed on the Home Page-->
     <main>
-      <p>Hello and welcome to my CV</p>
-      <p>Introduction to my CV </p>
-    </main>
+      <img src="HomePageImage.png" alt="Image for the Home Page">
+    <!--The main content on the Home Page-->
+      <p id="welcomeMessage">Hello and welcome to my CV website</p>
+      <p id="intro">In this website will be links to pages about projects I have done, my CV and how to contact me.</p>
 
+  </main>
+    <!--Facts about me on the bottom of the Home Page-->
     <footer>
-      <p>Facts about me</p>
+      <p id="factsTitle">A few facts about me</p>
+      <table id="facts">
+        <tr>
+          <td id="factsRow">Was the oldest at school</td>
+          <td id="factsRow">Left handed</td>
+          <td id="factsRow">Big fan of sci-fi</td>
+        </tr>
+        <tr>
+          <td>Was in the Scouts</td>
+          <td>Skied in the French Alps</td>
+          <td>Taken part in clay pigeon shooting</td>
+        </tr>
+      </table>
     </footer>
+
   </body>
 </html>

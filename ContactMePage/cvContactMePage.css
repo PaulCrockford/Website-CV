@@ -1,0 +1,51 @@
+* {
+  color: #FFFFFF
+}
+
+* {
+  background: #757575
+}
+
+
+
+a:link {
+  color: #0D2063
+}
+
+a:visited {
+  color: #0D2063
+}
+
+a:hover {
+  color: #0D2063
+}
+
+a:active {
+  color: #0D2063
+}
+
+header {
+  display: flex;
+}
+
+h1 {
+  font-family: 'Barlow', sans-serif;
+  padding-left: 20px;
+}
+
+ul {
+  flex: right;
+}
+
+li {
+  display: flex;
+  float: left;
+  flex-direction: row-reverse;
+  font-family: 'Sarala', sans-serif;
+  display: block;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  flex-direction: row-reverse;
+
+}
