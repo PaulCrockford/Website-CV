@@ -1,30 +1,31 @@
+/*Sets all text colour to white*/
 * {
   color: #FFFFFF
 }
 
-* {
+div {
   background: #757575
 }
 
-
-
+/*The colour for the links to Sonic Sliver*/
 a:link {
-  color: #0D2063
+  color: #757575
 }
 
 a:visited {
-  color: #0D2063
+  color: #757575
 }
 
 a:hover {
-  color: #0D2063
+  color: #757575
 }
 
 a:active {
-  color: #0D2063
+  color: #757575
 }
 
 header {
+  background-color: #0D2063;
   display: flex;
 }
 
@@ -48,4 +49,51 @@ li {
   text-decoration: none;
   flex-direction: row-reverse;
 
+}
+
+.email {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 80px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+#emailInfo {
+  position: absolute;
+  top: 80px;
+  left: 650px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.phoneNumber {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 80px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+#phoneNumberInfo{
+  position: absolute;
+  top: 375px;
+  left: 650px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.homeNumber {
+  font-family: 'Lato', sans-serif;
+  font-size: 80px;
+  padding-top: 20px;
+  padding-left: 10px;
+  background: #0A090C;
+}
+
+#homeNumberInfo {
+  position: absolute;
+  top: 675px;
+  left: 650px;
+  padding-top: 10px;
+  padding-right: 20px;
 }
