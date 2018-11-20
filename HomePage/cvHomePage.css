@@ -1,31 +1,10 @@
+/*Sets all text colour to white*/
 * {
   color: #FFFFFF
 }
 
-* {
-  background: #757575
-}
-
-
-
-a:link {
-  color: #0D2063
-}
-
-a:visited {
-  color: #0D2063
-}
-
-a:hover {
-  color: #0D2063
-}
-
-a:active {
-  color: #0D2063
-}
-
 header {
-
+  background-color: #0D2063;
   display: flex;
 }
 
@@ -48,17 +27,46 @@ li {
   padding: 14px 16px;
   text-decoration: none;
   flex-direction: row-reverse;
-
 }
 
+/*The colour for the links to Sonic Sliver*/
+a:link {
+  color: #757575
+}
+
+a:visited {
+  color: #757575
+}
+
+a:hover {
+  color: #757575
+}
+
+a:active {
+  color: #757575
+}
+
+/*Sets the main section background to Sonic Sliver, adds some padding to the
+left and right and sets the margin bottom to zero. The font is set to Oxygen*/
 main {
-  font-family: 'Oxygen', sans-serif;
+  background: #757575;
+  margin-bottom: 0px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+    font-family: 'Oxygen', sans-serif;
 }
 
+/*Sets the footer section background to Smoky Black with no margin at the top
+as well adds a little padding to the top and bottom. The font is set to Lato*/
 footer {
+  background: #0A090C;
+  margin-top: 0px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   font-family: 'Lato', sans-serif;
 }
 
+/*Sets where the Welcome Message will display as well as the font size*/
 #welcomeMessage{
   position: absolute;
   font-size: 60px;
@@ -66,6 +74,7 @@ footer {
   left: 700px;
 }
 
+/*Sets where the Intro will display as well as the font size*/
 #intro{
   position: absolute;
   font-size: 50px;
@@ -73,19 +82,25 @@ footer {
   left: 700px;
 }
 
+/*Sets the Facts Title font size and the font to be bold. It also adds some
+padding to the left and sets the margin at the top to zero*/
 #factsTitle {
   padding-left: 20px;
   font-size: 50px;
   font-weight: bold;
+  margin-top: 0px;
 
 }
 
-#facts {
+/*Sets the Facts Table to cover the width of the webpage as well as it's font
+size. Also adds padding to the left*/
+#factsTable {
   width: 100%;
   font-size: 30px;
   padding-left: 200px;
 }
 
+/*Adds some padding between the rows*/
 #factsRow {
   padding-bottom: 50px;
 }

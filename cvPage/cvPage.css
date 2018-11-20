@@ -1,30 +1,31 @@
+/*Sets all text colour to white*/
 * {
-  color: #FFFFFF
+  color: #FFFFFF;
 }
 
-* {
+div {
   background: #757575
 }
 
-
-
+/*Sets the colour for the links to Sonic Sliver*/
 a:link {
-  color: #0D2063
+  color: #757575
 }
 
 a:visited {
-  color: #0D2063
+  color: #757575
 }
 
 a:hover {
-  color: #0D2063
+  color: #757575
 }
 
 a:active {
-  color: #0D2063
+  color: #757575
 }
 
 header {
+  background-color: #0D2063;
   display: flex;
 }
 
@@ -48,4 +49,86 @@ li {
   text-decoration: none;
   flex-direction: row-reverse;
 
+}
+
+.RYLA {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 27px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+#RYLAinfo1 {
+  position: absolute;
+  top: 80px;
+  left: 650px;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+#RYLAinfo2 {
+  position: absolute;
+  top: 170px;
+  left: 650px;
+  padding-top: 50px;
+  padding-right: 20px;
+}
+
+#RYLAinfo3 {
+  position: absolute;
+  top: 240px;
+  left: 650px;
+  padding-top: 80px;
+  padding-right: 20px;
+}
+
+.DUSA {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 21px;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#DUSAinfo1 {
+  position: absolute;
+  top: 370px;
+  left: 650px;
+  padding-top: 80px;
+  padding-right: 20px;
+}
+
+#DUSAinfo2 {
+  position: absolute;
+  top: 490px;
+  left: 650px;
+  padding-top: 80px;
+  padding-right: 20px;
+}
+
+.Commitments {
+  font-family: 'Lato', sans-serif;
+  background: #0A090C;
+  padding-bottom: 10px;
+}
+
+#CommitmentsTitle {
+  padding-left: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 0px;
+
+}
+
+#CommitmentsTable {
+  width: 1700px;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  padding-right: 30px;
+
+}
+
+#CommitmentsRow {
+  padding-bottom: 50px;
 }
