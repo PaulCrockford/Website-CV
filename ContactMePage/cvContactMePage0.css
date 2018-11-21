@@ -1,0 +1,178 @@
+/*Sets all text colour to white*/
+* {
+  color: #FFFFFF
+}
+
+/*Sets the header background colour to Royal Blue*/
+header {
+  background-color: #0D2063;
+  display: flex;
+}
+
+/*Sets the font of the heading to Barlow and puts in some padding to the left*/
+h1 {
+  font-family: 'Barlow', sans-serif;
+  padding-left: 20px;
+}
+
+ul {
+  flex: right;
+}
+
+/*Sets the listed items font to Sarala and aligns the list along the header*/
+li {
+  display: flex;
+  float: left;
+  flex-direction: row-reverse;
+  font-family: 'Sarala', sans-serif;
+  display: block;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  flex-direction: row-reverse;
+}
+
+/*The colour for the links to Sonic Sliver*/
+a:link {
+  color: #757575
+}
+
+a:visited {
+  color: #757575
+}
+
+a:hover {
+  color: #757575
+}
+
+a:active {
+  color: #757575
+}
+
+/*Sets the block element section background to Sonic Sliver*/
+div {
+  background: #757575
+}
+
+/*The class block for the Email that involes setting the font to Oxygen
+and the size of the font as well. Adds padding to the left and top of the class
+block*/
+.email {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 80px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+/*Positions the information for the Email using absolute positioning and
+padding*/
+#emailInfo {
+  position: absolute;
+  top: 80px;
+  left: 650px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+/*The class block for the Phone Number that involes setting the font to Oxygen
+and the size of the font as well. Adds padding to the left and top of the class
+block*/
+.phoneNumber {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 80px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+/*Positions the information for the Phone Number using absolute positioning and
+padding*/
+#phoneNumberInfo{
+  position: absolute;
+  top: 375px;
+  left: 650px;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+/*The class block for the Home Number that involes setting the font to Oxygen
+and the size of the font as well. Adds padding to the left and top of the class
+block*/
+.homeNumber {
+  font-family: 'Lato', sans-serif;
+  font-size: 80px;
+  padding-top: 20px;
+  padding-left: 10px;
+  background: #0A090C;
+}
+
+/*Positions the information for the Home Number using absolute positioning and
+padding*/
+#homeNumberInfo {
+  position: absolute;
+  top: 675px;
+  left: 650px;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+/*As the website's width decreases, the font size of the text and image size
+decrease too*/
+@media screen and (max-width: 1800px) {
+  #emailInfo, #phoneNumberInfo, #homeNumberInfo {
+    font-size: 70px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #emailInfo, #phoneNumberInfo, #homeNumberInfo {
+    font-size: 50px;
+    padding-top: 70px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+   #emailInfo, #phoneNumberInfo, #homeNumberInfo {
+    font-size: 30px;
+    padding-top: 100px;
+  }
+
+  img {
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+  .phoneNumber {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+   #emailInfo, #phoneNumberInfo, #homeNumberInfo {
+    left: 550px;
+    font-size: 40px;
+    padding-top: 10px;
+    margin-top: 0px;
+    position: static;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+  }
+
+/*At this point the text moves underneath the image*/
+@media screen and (max-width: 900px) {
+  #emailInfo, #phoneNumberInfo, #homeNumberInfo {
+    font-size: 30px;
+    position: static;
+  }
+}
