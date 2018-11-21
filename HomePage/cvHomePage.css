@@ -3,11 +3,13 @@
   color: #FFFFFF
 }
 
+/*Sets the header background colour to Royal Blue*/
 header {
   background-color: #0D2063;
   display: flex;
 }
 
+/*Sets the font of the heading to Barlow and puts in some padding to the left*/
 h1 {
   font-family: 'Barlow', sans-serif;
   padding-left: 20px;
@@ -17,6 +19,7 @@ ul {
   flex: right;
 }
 
+/*Sets the listed items font to Sarala and aligns the list along the header*/
 li {
   display: flex;
   float: left;
@@ -29,7 +32,7 @@ li {
   flex-direction: row-reverse;
 }
 
-/*The colour for the links to Sonic Sliver*/
+/*Sets the colour for the links to Sonic Sliver*/
 a:link {
   color: #757575
 }
@@ -53,7 +56,7 @@ main {
   margin-bottom: 0px;
   padding-top: 45px;
   padding-bottom: 45px;
-    font-family: 'Oxygen', sans-serif;
+  font-family: 'Oxygen', sans-serif;
 }
 
 /*Sets the footer section background to Smoky Black with no margin at the top
@@ -67,7 +70,7 @@ footer {
 }
 
 /*Sets where the Welcome Message will display as well as the font size*/
-#welcomeMessage{
+#welcomeMessage {
   position: absolute;
   font-size: 60px;
   top: 100px;
@@ -75,7 +78,7 @@ footer {
 }
 
 /*Sets where the Intro will display as well as the font size*/
-#intro{
+#intro {
   position: absolute;
   font-size: 50px;
   top: 250px;
@@ -89,7 +92,6 @@ padding to the left and sets the margin at the top to zero*/
   font-size: 50px;
   font-weight: bold;
   margin-top: 0px;
-
 }
 
 /*Sets the Facts Table to cover the width of the webpage as well as it's font
@@ -101,6 +103,103 @@ size. Also adds padding to the left*/
 }
 
 /*Adds some padding between the rows*/
-#factsRow {
+#factsRow1, #factsRow2, #factsRow3 {
   padding-bottom: 50px;
+}
+
+/*As the website's width decreases, the font size of the text and image size
+decrease too*/
+@media screen and (max-width: 1800px) {
+  #welcomeMessage {
+    font-size: 50px;
+  }
+
+  #intro {
+    font-size: 40px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #welcomeMessage {
+    font-size: 50px;
+  }
+
+  #intro {
+    font-size: 40px;
+    top: 300px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #factsTable{
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #welcomeMessage {
+    font-size: 30px;
+  }
+
+   #intro {
+    font-size: 20px;
+  }
+
+  img {
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+  #factsTitle {
+    font-size: 30px;
+    position: static;
+  }
+
+  #factsTable {
+   font-size: 20px;
+   position: static;
+   padding-left: 100px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #welcomeMessage {
+    left: 550px;
+  }
+
+   #intro {
+    left: 550px;
+  }
+}
+
+/*At this point the text moves underneath the image*/
+@media screen and (max-width: 900px) {
+  #welcomeMessage {
+    font-size: 30px;
+    position: static;
+    padding-left: 10px;
+  }
+
+   #intro {
+    font-size: 20px;
+    position: static;
+    padding-left: 10px;
+  }
+
+  #factsTitle {
+    font-size: 20px;
+  }
+
+  #factsTable{
+    font-size: 15px;
+    padding-left: 50px;
+  }
 }

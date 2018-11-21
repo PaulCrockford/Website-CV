@@ -3,11 +3,36 @@
   color: #FFFFFF
 }
 
-main {
-  background: #757575
+/*Sets the header background colour to Royal Blue*/
+header {
+  background-color: #0D2063;
+  display: flex;
 }
 
-/*The colour for the links*/
+/*Sets the font of the heading to Barlow and puts in some padding to the left*/
+h1 {
+  font-family: 'Barlow', sans-serif;
+  padding-left: 20px;
+}
+
+ul {
+  flex: right;
+}
+
+/*Sets the listed items font to Sarala and aligns the list along the header*/
+li {
+  display: flex;
+  float: left;
+  flex-direction: row-reverse;
+  font-family: 'Sarala', sans-serif;
+  display: block;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  flex-direction: row-reverse;
+}
+
+/*Sets the colour for the links to Sonic Sliver*/
 a:link {
   color: #757575
 }
@@ -24,33 +49,14 @@ a:active {
   color: #757575
 }
 
-header {
-  background-color: #0D2063;
-  display: flex;
+/*Sets the main section background to Sonic Sliver*/
+main {
+  background: #757575
 }
 
-h1 {
-  font-family: 'Barlow', sans-serif;
-  padding-left: 20px;
-
-}
-
-ul {
-  flex: right;
-}
-
-li {
-  display: flex;
-  float: left;
-  flex-direction: row-reverse;
-  font-family: 'Sarala', sans-serif;
-  display: block;
-  text-align: right;
-  padding: 14px 16px;
-  text-decoration: none;
-  flex-direction: row-reverse;
-}
-
+/*The class block for the first project that involes setting the font to Oxygen
+and the size of the font as well. Adds padding to the left and top of the class
+block as well as setting the background to Sonic Sliver*/
 .ProjectOne {
   background: #757575;
   font-family: 'Oxygen', sans-serif;
@@ -59,6 +65,8 @@ li {
   padding-top: 10px;
 }
 
+/*Positions the information for the first project using absolute positioning
+and padding*/
 #ProjectOneInfoOne {
   position: absolute;
   top: 10px;
@@ -75,6 +83,9 @@ li {
   padding-right: 20px;
 }
 
+/*The class block for the second project that involes setting the font to
+Oxygen and the size of the font as well. Adds padding to the left and top of
+the class block as well as setting the background to Sonic Sliver*/
 .ProjectTwo {
   background: #757575;
   font-family: 'Oxygen', sans-serif;
@@ -83,6 +94,8 @@ li {
   padding-bottom: 3px;
 }
 
+/*Positions the information for the second project using absolute positioning
+and padding*/
 #ProjectTwoInfoOne {
   position: absolute;
   top: 270px;
@@ -99,6 +112,9 @@ li {
   padding-right: 20px;
 }
 
+/*The class block for the third project that involes setting the font to
+Lato and the size of the font as well. Adds padding to the left and top of
+the class block as well as setting the background to Smoky Black*/
 .ProjectThree {
   background: #0A090C;
   font-family: 'Lato', sans-serif;
@@ -108,6 +124,8 @@ li {
   padding-bottom: 5px;
 }
 
+/*Positions the information for the third project using absolute positioning
+and padding*/
 #ProjectThreeInfoOne {
   position: absolute;
   top: 550px;
@@ -122,4 +140,71 @@ li {
   left: 650px;
   padding-top: 80px;
   padding-right: 20px;
+}
+
+/*As the website's width decreases, the font size of the text and image size
+decrease too*/
+@media screen and (max-width: 1800px) {
+  #ProjectOneInfoOne, #ProjectOneInfoTwo,
+  #ProjectTwoInfoOne, #ProjectTwoInfoTwo,
+  #ProjectThreeInfoOne, #ProjectThreeInfoTwo {
+    font-size: 20px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #ProjectOneInfoOne, #ProjectOneInfoTwo,
+  #ProjectTwoInfoOne, #ProjectTwoInfoTwo,
+  #ProjectThreeInfoOne, #ProjectThreeInfoTwo {
+    font-size: 15px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #ProjectOneInfoOne, #ProjectOneInfoTwo,
+  #ProjectTwoInfoOne, #ProjectTwoInfoTwo,
+  #ProjectThreeInfoOne, #ProjectThreeInfoTwo {
+    font-size: 13px;
+  }
+
+  img {
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+  .ProjectTwo {
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #ProjectOneInfoOne, #ProjectOneInfoTwo,
+  #ProjectTwoInfoOne, #ProjectTwoInfoTwo,
+  #ProjectThreeInfoOne, #ProjectThreeInfoTwo {
+    left: 550px;
+    font-size: 15px;
+    position: static;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+  }
+
+/*At this point the text moves underneath the image*/
+@media screen and (max-width: 900px) {
+  #ProjectOneInfoOne, #ProjectOneInfoTwo,
+  #ProjectTwoInfoOne, #ProjectTwoInfoTwo,
+  #ProjectThreeInfoOne, #ProjectThreeInfoTwo {
+    font-size: 15px;
+    position: static;
+  }
 }
