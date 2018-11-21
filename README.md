@@ -6,6 +6,7 @@ The work I got done per day:
 
 * Day 1 - Set up and links to each website
 * Day 2 - Set up the css for all pages and added content
-* Day 3 - All html and css are done, just need to do responsive design and w3c validation  
+* Day 3 - All html and css are done, just need to do responsive design and w3c validation
+* Day 4 - All responsive is done with all comments added. The website has been check with w3c validation as well
 
 Made by @PaulCrockford

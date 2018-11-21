@@ -3,8 +3,33 @@
   color: #FFFFFF;
 }
 
-div {
-  background: #757575
+/*Sets the header background colour to Royal Blue*/
+header {
+  background-color: #0D2063;
+  display: flex;
+}
+
+/*Sets the font of the heading to Barlow and puts in some padding to the left*/
+h1 {
+  font-family: 'Barlow', sans-serif;
+  padding-left: 20px;
+}
+
+ul {
+  flex: right;
+}
+
+/*Sets the listed items font to Sarala and aligns the list along the header*/
+li {
+  display: flex;
+  float: left;
+  flex-direction: row-reverse;
+  font-family: 'Sarala', sans-serif;
+  display: block;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  flex-direction: row-reverse;
 }
 
 /*Sets the colour for the links to Sonic Sliver*/
@@ -24,33 +49,14 @@ a:active {
   color: #757575
 }
 
-header {
-  background-color: #0D2063;
-  display: flex;
+/*Sets the block element section background to Sonic Sliver*/
+div {
+  background: #757575
 }
 
-h1 {
-  font-family: 'Barlow', sans-serif;
-  padding-left: 20px;
-}
-
-ul {
-  flex: right;
-}
-
-li {
-  display: flex;
-  float: left;
-  flex-direction: row-reverse;
-  font-family: 'Sarala', sans-serif;
-  display: block;
-  text-align: right;
-  padding: 14px 16px;
-  text-decoration: none;
-  flex-direction: row-reverse;
-
-}
-
+/*The class block for RYLA that involes setting the font to Oxygen
+and the size of the font as well. Adds padding to the left and top of the class
+block*/
 .RYLA {
   font-family: 'Oxygen', sans-serif;
   font-size: 27px;
@@ -58,6 +64,7 @@ li {
   padding-left: 10px;
 }
 
+/*Positions the information for RYLA using absolute positioning and padding*/
 #RYLAinfo1 {
   position: absolute;
   top: 80px;
@@ -82,6 +89,9 @@ li {
   padding-right: 20px;
 }
 
+/*The class block for the first project that involes setting the font to Oxygen
+and the size of the font as well. Adds padding to the left and top of the class
+block*/
 .DUSA {
   font-family: 'Oxygen', sans-serif;
   font-size: 21px;
@@ -90,6 +100,7 @@ li {
   padding-bottom: 10px;
 }
 
+/*Positions the information for DUSA using absolute positioning and padding*/
 #DUSAinfo1 {
   position: absolute;
   top: 370px;
@@ -106,29 +117,138 @@ li {
   padding-right: 20px;
 }
 
+/*The class block for the first project that involes setting the font to Lato
+and the size of the font as well. Adds padding to the bottom of the class
+block as well as setting the background to Smoky Black*/
 .Commitments {
   font-family: 'Lato', sans-serif;
   background: #0A090C;
   padding-bottom: 10px;
 }
 
+/*Positions the title for the Commitments table using padding.
+It also sets the size of the font and to bold*/
 #CommitmentsTitle {
   padding-left: 10px;
   font-size: 40px;
   font-weight: bold;
   margin-top: 0px;
-
 }
 
+/*Positions the information for the Commitments Title using padding.
+It also sets the size of the font*/
 #CommitmentsTable {
   width: 1700px;
   font-size: 20px;
   padding-left: 10px;
   padding-bottom: 20px;
   padding-right: 30px;
-
 }
 
-#CommitmentsRow {
+/*Adds some padding in between the rows*/
+#CommitmentsRow1, #CommitmentsRow2 {
   padding-bottom: 50px;
+}
+
+/*As the website's width decreases, the font size of the text and image size
+decrease too*/
+@media screen and (max-width: 1800px) {
+  .RYLA {
+    font-size: 24px;
+  }
+
+  .DUSA {
+    font-size: 18px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .RYLA {
+    font-size: 21px;
+  }
+
+  .DUSA {
+    font-size: 15px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  #CommitmentsTable{
+    font-size: 25px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .RYLA {
+    font-size: 17px;
+  }
+
+   .DUSA {
+    font-size: 13px;
+  }
+
+  img {
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+  #CommitmentsTitle {
+    font-size: 30px;
+    position: static;
+  }
+
+  #CommitmentsTable {
+   font-size: 20px;
+   position: static;
+   padding-left: 100px;
+ }
+}
+
+@media screen and (max-width: 1100px) {
+  #RYLAinfo1, #RYLAinfo2, #RYLAinfo3 {
+    left: 550px;
+    position: sticky;
+    padding-top: 0px;
+  }
+
+   #DUSAinfo1, #DUSAinfo2 {
+    left: 550px;
+    position: sticky;
+    padding-top: 0px;
+  }
+
+  #RYLAinfo3 {
+    margin-bottom: 0px;
+  }
+}
+
+/*At this point the text moves underneath the image*/
+@media screen and (max-width: 900px) {
+  #RYLAinfo1, #RYLAinfo2, #RYLAinfo3 {
+    font-size: 15px;
+    position: static;
+  }
+
+   #DUSAinfo1, #DUSAinfo2 {
+    font-size: 15px;
+    position: static;
+  }
+
+  #CommitmentsTitle {
+    font-size: 20px;
+  }
+
+  #CommitmentsTable{
+    font-size: 15px;
+    padding-left: 50px;
+  }
 }
