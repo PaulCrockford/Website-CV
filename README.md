@@ -10,6 +10,5 @@ The work I got done per day:
 * Day 4 - All responsive is done with all comments added. The website has been check with w3c validation as well
 * Day 4 - Renamed cvHomePage to index, hoping that'll get GitHub Pages to work
 
-Link to website: index.html
 
 Made by @PaulCrockford
